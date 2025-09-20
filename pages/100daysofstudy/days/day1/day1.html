@@ -7,7 +7,130 @@
 </head>
 
 <body>
-    Wow, what an efficient webpage!
+    <p>
+        What is the absolute bare minimum required to create a valid HTML webpage? It may surprise you, but all it takes
+        is a small collection of 6 lines of HTML composed of 1 declaration, 3 HTML elements, and 1 character.
+    </p>
+
+    <br>
+
+    <p>
+        It looks like this:
+    </p>
+
+    <p>
+        &lt;!DOCTYPE html&gt;
+        <br>&lt;html&gt;
+        <br>
+        <br>&lt;head&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;?&lt;/title&gt;
+        <br>&lt;/head&gt;
+        <br>
+        <br>&lt;/html&gt;
+        <br>
+        <br>
+    </p>
+
+    <p>
+        Granted, all that will get you is an empty page, but it is a perfectly <em>valid</em> empty page.
+    </p>
+
+    <p>
+        This can be
+        confirmed by checking the code in the Nu HTML Checker created by the World Wide Web Consortium (W3C) - a
+        non-profit organization
+        <!-- founded by the inventor of the Web, Tim Berners-Lee. W3C is  -->
+        responsible for
+        developing the standards that are used across the whole of the
+        <!-- World Wide -->
+        Web.
+    </p>
+
+    <br>
+
+    <p>
+        Let's take a look at each piece of this proto-webpage's HTML:
+    </p>
+
+    <br>
+
+    <p>
+        <b>&lt; &gt;</b>
+        <br>The angle brackets &lt; &gt; are fundamental to HTML syntax. Anything inside of a pair of angle
+        brackets is
+        considered <b>markup</b>.
+        <br>It's in the name! [H]yper[T]ext (one word) [<b>M</b>]<b>arkup</b> [L]anguage.
+        <br>Anything defined as markup is interpreted by the browser as <em>instructions</em>, and not content.
+        <br>We will see this play out below.
+    </p>
+
+    <br>
+
+    <p>
+        <b>&lt;!DOCTYPE html&gt;</b>
+        <br>Now that we understand the function of the angle brackets, we can immediately see that this line is a set of
+        instructions meant to be read and interpreted by the browser, not us.
+        <br>Even though this line might appear at first glance to be composed of two parts, <b>!DOCTYPE</b> and
+        <b>html</b>, it is actually a
+        combination of three distinct instructions: <b>!</b>, <b>DOCTYPE</b>, and <b>html</b>.
+    </p>
+
+    <p>
+        <b>!</b> lets the browser know that what immediately follows is a <b>declaration</b>, which imparts metadata or
+        additional rules
+        to its target. The target of a declaration could be the entire page, or just a small selection of text.
+        <br>Declarations are rare in HTML, though every valid webpage must include the one mentioned here.
+    </p>
+
+    <p>
+        <b>DOCTYPE</b> is an abbreviated form for <i>document type</i>. Its modern use is strictly to inform the browser
+        that the instructions that follow it should be interpreted as some version of HTML.
+        <br>See below.
+    </p>
+
+    <p>
+        <b>html</b>, when interpreted as part of the !DOCTYPE declaration, simply identifies that the HTML document
+        should be
+        interpreted using
+        HTML version 5 standards. Previous versions of HTML had more complicated values here, but thankfully we
+        shouldn't have to
+        worry about that for now.
+    </p>
+
+    <br>
+
+    <p>
+        <b>&lt;html&gt; &lt;/html&gt;</b>
+    </p>
+
+    <br>
+
+    <p>
+        <b>&lt;head&gt; &lt;/head&gt;</b>
+    </p>
+
+    <br>
+
+    <p>
+        <b>&lt;tite&gt; &lt;/title&gt;</b>
+    </p>
+
+    <br>
+
+    <p>
+        <b>?</b>
+    </p>
+
 </body>
 
 </html>
+
+
+
+
+
+<!-- Tags signal the start and the end of an <b>element</b>, which is a structural unit that
+        provides
+        instruction to the browser.
+        <br>If you really want to render the symbol in the content of your webpage, like I have, you should use it's
+        character code - which is a topic for another day. -->
