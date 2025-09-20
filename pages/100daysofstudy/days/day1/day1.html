@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Basic HTML Boilerplate</title>
+    <title>Study Journal: Day 1</title>
 </head>
 
 <body>
     <p>
         What is the absolute bare minimum required to create a valid HTML webpage? It may surprise you, but all it takes
-        is a small collection of 6 lines of HTML composed of 1 declaration, 3 HTML elements, and 1 character.
+        is a small collection of 2 lines of HTML composed of 1 declaration, 1 HTML element, and at least 1 character.
     </p>
 
     <br>
@@ -20,13 +20,7 @@
 
     <p>
         &lt;!DOCTYPE html&gt;
-        <br>&lt;html&gt;
-        <br>
-        <br>&lt;head&gt;
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;?&lt;/title&gt;
-        <br>&lt;/head&gt;
-        <br>
-        <br>&lt;/html&gt;
+        <br>&lt;title&gt;?&lt;/title&gt;
         <br>
         <br>
     </p>
@@ -39,10 +33,8 @@
         This can be
         confirmed by checking the code in the Nu HTML Checker created by the World Wide Web Consortium (W3C) - a
         non-profit organization
-        <!-- founded by the inventor of the Web, Tim Berners-Lee. W3C is  -->
         responsible for
         developing the standards that are used across the whole of the
-        <!-- World Wide -->
         Web.
     </p>
 
@@ -61,7 +53,38 @@
         considered <b>markup</b>.
         <br>It's in the name! [H]yper[T]ext (one word) [<b>M</b>]<b>arkup</b> [L]anguage.
         <br>Anything defined as markup is interpreted by the browser as <em>instructions</em>, and not content.
-        <br>We will see this play out below.
+        <br>You can imagine that using &lt; &gt; is somewhat like speaking to a dog. For the most part, you speak in a
+        normal conversational tone to and around a dog and it will continue to happily go about its day while you do.
+        But when you want your dog to <em>do</em> something, you may change your body language, alter your voice
+        slightly, and enunciate your words more clearly:
+    </p>
+    <p>
+        <strong>Sit.</strong>
+        <br>The dog sits.
+    </p>
+    <p>
+        <em>Walk?</em>
+        <br>The dog fetches its leash.
+    </p>
+    <p>
+        <em>Shake!</em>
+        <br>The dog lifts its paw for a handshake.
+    </p>
+    <p>
+        If your dog is trained and well-behaved (which is unlikely), it will perform these commands on cue.
+        <br>But if you don't adopt this change in communication style, your dog will likely not assume that it should
+        act on these words.
+    </p>
+    <p>
+        <i>"I'm sorry Bob, I know it's what you want but I'm not going to <b>roll over</b> on this."</i>
+        <br>The dog does not begin rolling cross the living room.
+    </p>
+    <p>
+        It is the same with the browser. When we speak in a &lt;tone&gt; that it understands, it realizes <i>"oh, you're
+            talking to <strong>me</strong>!"</i> and executes your commands.
+    </p>
+    <p>
+        We will see this play out below.
     </p>
 
     <br>
@@ -83,72 +106,120 @@
     </p>
 
     <p>
-        <b>DOCTYPE</b> is an abbreviated form for <i>document type</i>. Its modern use is strictly to inform the browser
-        that the instructions that follow it should be interpreted as some version of HTML.
+        <b>DOCTYPE</b> informs the browser that you are about to tell it what type of document it's looking at.
         <br>See below.
     </p>
 
     <p>
-        <b>html</b>, when interpreted as part of the !DOCTYPE declaration, simply identifies that the HTML document
-        should be
-        interpreted using
-        HTML version 5 standards. Previous versions of HTML had more complicated values here, but thankfully we
-        shouldn't have to
-        worry about that for now.
+        <b>html</b>, when used as part of the !DOCTYPE declaration, signals to the browser that it is looking
+        at an HTML document which it should interpret using the HTML version 5 standards.
+        <br>Other versions of HTML had more complicated values here, such as version 4.01, which required values that
+        looked more like this:
+        <br><i>HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"</i>
     </p>
 
     <br>
 
     <p>
-        <b>&lt;html&gt; &lt;/html&gt;</b>
-    </p>
-
-    <br>
-
-    <p>
-        <b>&lt;head&gt; &lt;/head&gt;</b>
-    </p>
-
-    <br>
+        <b>&lt;title&gt; &lt;/title&gt;</b>
+        <br>Here we have another set of instructions, called an <b>element</b>. But you will notice some distinct
+        differences between this element and the declaration above.
 
     <p>
-        <b>&lt;tite&gt; &lt;/title&gt;</b>
+        When the browser sees text enclosed in a &lt; &gt; pair, it will assume by default that the encapsulated
+        text will be an <b>element tag</b>. That <b>!</b> pre-pended to DOCTYPE exists speficically to yell at the
+        browser: "<em>I'M NOT AN ELEMENT TAG!.. I'm a declaration.</em>"
+        <br>But what is a <b>tag</b> and what part of an <b>element</b> does it occupy? ...and what the hell even is an
+        <b>element</b>??
+        <br>I know, I know. I hate using terms before they've been defined. Unfortunately, there are <em>so many</em> of
+        them and their uses and definitions are so woven into and amongst each other, I wouldn't even know how to begin
+        without losing your attention entirely. So bear with me and we'll straighten this all out.
+    </p>
+    <p>
+        A <b>tag</b> is an instruction that defines the starting and ending boundaries of an element.
+        <br>Many tags come in pairs, each of which is itself enclosed by a pair of delimiting symbols.
+        <br>The <b>&lt;</b> symbol is called the <b>start tag open</b> delimiter and it marks exactly where a start tag,
+        the first half of a tag pair, begins.
+        <br>The <b>&lt;/</b> sequence of symbols is called the <b>end tag open</b> delimiter and it marks exactly where
+        an end tag, the second half of the tag pair, begins.
+        <br>And the <b>&gt;</b> symbol is called the <b>tag close</b> delimiter and it marks exacty where any tag ends.
+        <br><b>[start tag open] [tag] [tag close]</b> content <b>[end tag open] [tag] [tag close]</b>
+        <br><b>&lt; start tag &gt;</b> content <b>&lt;/ end tag &gt;</b>
+    </p>
+    <p>
+        An <b>element</b> is just the term used to describe a tag pair and its content: <b>&lt;title&gt;</b>Study
+        Journal:
+        Day
+        1<b>&lt;/title&gt;</b>
+    </p>
+    <p>
+        As mentioned above, most tags come in a pair which enclose the content that the tag is modifying.
+        <br>The simplest way to represent this is as follows:
+        <br>
+        <br>...content... <i>Begin instruction here--&lt;tag&gt;</i> modified content
+        <i>&lt;/tag&gt;--End instruction here</i> ...content...
+        <br>
+        <br>You've already witnessed the effect that a tag pair has on it's content many times on this page.
+        <br>
+        <br>...content... <b><i>modified content</i></b> ...content...
+    </p>
+    <p>
+        But some tags exist alone, without the need for an end tag, and make up an entire element by themself.
+        <br>Dramatically named <b>void</b> elements, they do not modify any content and therefor do not need an end tag.
+        These can also be referred to as <b>self-closing tags</b>, if you have a preference for dull conversation.
     </p>
 
     <br>
 
     <p>
         <b>?</b>
+        <br>At lease one character in length, this <b>?</b> could have been anything, but the content of &lt;title&gt;
+        &lt;/title&gt; must not remain blank or empty.
     </p>
+
+    <br>
+
+    <p>
+        Not too bad, right? But.. why did I call it a <em>proto-</em>webpage at the start of this journal entry?
+        <br>Well, that's because the browser is actually doing some work here filling in a lot of blanks.
+        <br>Browsers kind of know what to expect from HTML and their method for understanding an HTML document implies
+        the existence of a few more elements that the browser infers if not stated in the document.
+    </p>
+    <p>
+        So when we write:
+    </p>
+    <p>
+        <b>&lt;!DOCTYPE html&gt;</b> <i>-- tells the browser which HTML standards to use</i>
+        <br><b>&lt;title&gt;?&lt;/title&gt;</b> <i>-- gives the page a name shown in the browser tab</i>
+        <br>
+    </p>
+    <p>The browser infers the following:</p>
+    <p>
+        &lt;!DOCTYPE html&gt;
+        <br><b>&lt;html&gt;</b> <i>-- the root element of the webpage; all other elements are children of
+            &lt;html&gt;</i>
+        <br>
+        <br><b>&lt;head&gt;</b> <i>-- holds the webpage's metadata: title, character encoding, styles, etc</i>
+        <br>&lt;title&gt;?&lt;/title&gt;
+        <br><b>&lt;/head&gt;
+            <br>
+            <br>&lt;body&gt;</b> <i>-- contains the actual content that is visible on the page - what you are
+            reading right now!</i>
+        <br><b>&lt;/body&gt;
+            <br>
+            <br>&lt;/html&gt;</b>
+        <br>
+    </p>
+
+    <br>
+
+    <p>
+        There is obviously still a lot to learn about this basic structure, the HTML <b>boilerplate</b>, but we now have
+        a general understanding of basic HTML syntax and the fundamental building blocks of webpage creation.
+    </p>
+
+    <br>
 
 </body>
 
 </html>
-
-
-
-
-
-<!-- 
-Tags signal the start and the end of an <b>element</b>, which is a structural unit that
-        provides
-        instruction to the browser.
-        <br>If you really want to render the symbol in the content of your webpage, like I have, you should use it's
-        character code - which is a topic for another day. 
-        -->
-
-
-
-<!--
-         Why each part matters:
-
-<!DOCTYPE html> → tells the browser to use modern HTML5 standards.
-
-<html>...</html> → root element of the page.
-
-<head>...</head> → metadata (title, character encoding, styles, etc.).
-
-<title> → gives the page a name shown in the browser tab.
-
-<body>...</body> → the actual content visible on the page.
- -->
