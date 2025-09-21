@@ -4,44 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 3</title>
+    <title>Study Journal: Day 3</title>
 </head>
 
 <body>
-    <p>It's day #3 of my 100 days of study!</p>
-    <p>Today we're learning about &lt;a&gt; anchor elements, &lt;img&gt; image elements, their attributes and values,
-        and navigating our folder structure.
-        <br>That might sound a little dry, so I've decided to reward your patience with some sorcerous kittens!
-    </p>
-    <br>
-    <p>Thus far, we've been dealing with a single page - our index.html - and it's time to branch out.</p>
-    <p>Anyone who ever owned a Myspace back in it's heyday may be very familiar with the following HTML:</p>
-    <p>&lt;a href=" "&gt; &lt;/a&gt;</p>
-    <p>&lt;img src=" "&gt;</p>
-    </p>
-    <br>
-    <p>Let's take a closer look at each of these, starting with &lt;a href=" "&gt; &lt;/a&gt;</p>
-    <p>Here, the &lt;a&gt; tag refers to the <b>anchor</b> element - one of the most fundamental and
-        widely used elements in HTML. Its primary purpose is to create hyperlinks, which are connections from one
-        resource
-        to another.</p>
-    <p>The <b>href=""</b> that follows is the <b>hyperlink reference</b> and it is an <em>attribute</em> of the anchor
-        element that takes a <b>value</b>.</p>
-    <p>You can probably guess that the content inside of the <b>" "</b> is the attribute's <em>value</em>, which
-        specifies the destination URL of the hyperlink reference created by the element.</b></p>
-    </p>
-    <br>
-    <p>So.. putting this all together:
+
     <ul>
-        <li>The <b>&lt;a&gt;</b> element defines its content as an anchor.</li>
-        <li>The <b>href=" "</b> attribute establishes that the content is a clickable hyperlink - that it can be
-            interacted
-            with to navigate to another resource.</li>
-        <li>And the value entered between the quotation marks <b>" "</b> is the destination that the hyperlink
-            navigates <i>to</i>!</li>
+        <li><a href="/StudyJournal/index.html">Home</a></li>
+        <li><a href="/StudyJournal/pages/100daysofstudy/100days.html">100 Days</a></li>
     </ul>
-    Just like <a href="./pages/anchor.html"><b>this</b></a>!
+
+    <p>
+        It's day #3 of my 100 days of study!
     </p>
+
+    <p>
+        Today we're learning about &lt;a&gt; anchor elements, &lt;img&gt; image elements, their attributes and values,
+        and navigating our folder structure.
+        <br>That might sound a little dry, so I've decided to reward your patience (and mine) with some sorcerous
+        kittens!
+    </p>
+
+    <br>
+
+    <p>
+        Anyone who ever owned a Myspace back in it's heyday may be very familiar with the following HTML:
+    </p>
+
+    <p>
+        &lt;a href=" "&gt; &lt;/a&gt;
+    </p>
+
+    <p>
+        &lt;img src=" "&gt;
+    </p>
+
+    <br>
+
+    <p>
+        Let's take a closer look at each of these, starting with &lt;a href=" "&gt; &lt;/a&gt;
+    </p>
+
+    <p>
+        Here, the &lt;a&gt; tag refers to the <b>anchor</b> element - one of the most fundamental and widely used
+        elements in HTML. Its primary purpose is to create hyperlinks, which are connections from one resource to
+        another.
+    </p>
+
+    <p>
+        The <b>href=" "</b> that follows is the <b>hyperlink reference</b> and it is an <em>attribute</em> of the anchor
+        element that takes a <i>value</i>.
+    </p>
+
+    <p>
+        You can probably guess that the content inside of the <b>" "</b> is the attribute's <i>value</i> which, in this
+        case, specifies the destination URL of the hyperlink reference created by the element.
+    </p>
+
+    <br>
+
+    <p>
+        So.. putting this all together:
+    <ul>
+        <li>
+            The <b>&lt;a&gt;</b> element defines its content as an anchor.
+            <br>&lt;a&gt;<a>anchor</a>&lt;/a&gt;
+            <ul>
+                <li>
+                    <i>The browser recognizes this as an anchor, but that's about it</i>
+                </li>
+            </ul>
+        </li>
+
+        <br>
+
+        <li>
+            The <b>href=" "</b> attribute establishes that the content is a clickable hyperlink - that it can be
+            interacted with to navigate to another resource.
+            <br>&lt;a href=""&gt;<a href="">hyperlink</a>&lt;/a&gt;
+            <ul>
+                <li>
+                    <i>The browser recognizes this as an anchor with a clickable hyperlink, but there is no
+                        destination</i>
+                </li>
+            </ul>
+        </li>
+
+        <br>
+
+        <li>And the value entered between the quotation marks <b>" "</b> is the destination that the hyperlink
+            navigates to. Click the link to navigate to the second page of the Day 3 content!
+            <br>&lt;a href="./pages/anchor.html"><a href="./day3pages/anchor.html">Day 3, page 2!</a>&lt;/a&gt;
+            <ul>
+                <li>
+                    <i>The browser recognizes this as an anchor with a clickable hyperlink</i>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </p>
+
+    <br>
+
 </body>
 
 </html>
