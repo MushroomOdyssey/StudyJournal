@@ -8,79 +8,194 @@
 </head>
 
 <body>
-    <!-- SURPRISE!! I bet you weren't expecting to see me! I'm a comment and I am never rendered with the rest of the 
-     page content that you would normally see. Instead, I stay hidden in the source and I'm used for all kinds of 
-     interesting things from reminders to informational annotations to accreditations, and more! A word of warning - as 
-     you are now aware, anyone who wishes to can view the source and can read the comments that you write for yourself. 
-     So never leave comments in your source that include ANY sensitive content. I'm shy, but I'm not invisible. -->
-    <p>To vew the source HTML, feel free to right-click anywhere in this page and select "View page source". A new
-        tab will open and you will be able to view the HTML exactly as written in the index.html source file!</p>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/100daysofstudy/100days.html">100 Days</a></li>
+    </ul>
+
     <br>
-    <p>Today we I will explore a number of HTML elements that we use to add formatting and semantic meaning to our
-        webpages.
+
+    <p>
+        Today I would like to explore the concept of semantics so that we can appreciate the impact it has in our lives
+        and in our HTML.
     </p>
-    <p>But before I get into all of this, let's define the word <b>semantic</b>. A quick dictionary search reveals the
-        following definition: <i>relating to meaning in language or logic</i>. That's rather vague, isn't it? Let's
-        explore
-        that word a little more thoroughly so we can gain an appreciation of its impact in our lives and in our HTML.
+
+    <p>
+        To kick things off, let's define the word itself. A quick dictionary search of the word <i>semantic</i> reveals
+        the following definition:
+        <br><i>Relating to meaning in language or logic</i>.
     </p>
-    <p>When I write the word "fluffy", and you read it, there's a lot that's actually happening in that interaction. You
-        see a collection of symbols on a page that come together to represent a series of noises that we would make to
-        each other if we were standing face-to-face. But... it's more than that, right? The word has a meaning outside
-        of what we see and hear. It conveys something that we <em>feel</em>, that we <em>imagine</em>, even. All of
-        those internal processes that instantly spring into action and present you with thoughts of furry animals, soft
-        tactile sensations, and plump shapes provide the actual meaning to the word, as you perceive it.</p>
-    <p>That's one of the reasons we have so many minor variations of a concept - think fluffy vs fuzzy vs floofy vs
-        frizzy vs puffy, etc. I'd bet that if you had to generate a basic visualization of each of those words, they'd
-        look extremely similar. Each word is more than just the shape you see, or the color, or the feel, or the way it
-        moves in the breeze.</p>
+
+    <p>
+        That's rather vague, isn't it? Let's dig a little deeper.
+    </p>
+
     <br>
-    <p>Now that brings us to HTML. So what are the semantics of a tag or an element? Does a browser need to ruminate on
-        the deeper meaning of the &lt;strong&gt; element before interpreting the code?</p>
-    <p>Well, no...</p>
-    <p>But <em>we</em> do.</p>
-    <p>For illustrative purposes let's start with the most obvious set of tags that require us to pay some extra
-        attention to the semantics of our HTML:</p>
-    <p>&lt;i&gt;, &lt;b&gt;, &lt;em&gt;, and &lt;strong&gt;</p>
-    <p>These are the <i>italics</i>, <b>bold</b>, <em>emphasis</em>, and <strong>strong</strong> tags.</p>
-    <p>Visually, there is no difference between the <i>italics</i> and <em>emphasis</em> tags or the <b>bold</b> and
-        <strong>strong</strong> tags.
+
+    <p>
+        When I write the word "fluffy", and you read it, there's actually a lot going on. You see a collection of
+        symbols on a page that come together to represent a series of noises that we would make to each other if we were
+        standing face-to-face. These noises and the symbols that represent them convey the meaning of the word as we
+        understand it - which might change a little by region or culture.
+        <br>But... it's more than that, right?
+        <br>The word has a meaning outside of the symbols that we see and the sounds that we hear and even the
+        definition that we have been taught to assign it. It conveys <em>emotions</em>, <em>feelings</em>, and maybe
+        even <em>memories</em>.
+        <br>All of those internal processes spring into action and you instantly associate this string of symbols with
+        furry animals, soft tactile sensations, and plump shapes. The idea represented by each word is more than just
+        the shape you see, or the color, or the feel, or the way it moves in the breeze, <em><strong>or</strong></em>
+        all of these things together. I would argue that humans' understanding of a word is greater than the whole of
+        the word's attributes.
     </p>
-    <p>But as we know, there is more to meaning than what can be understood from any single dimension of perception. In
-        fact, the &lt;i&gt; element can be used in a variety of ways that visually illustrate some minor degree of
-        implied
-        context, such as a tag line or motto, a quote from a reviewer, a subtitle to a book or movie, etc. This context
-        only has meaning when perceived visually to the reader.</p>
-    <p>The &lt;em&gt; element, however, holds a more conversational meaning. As the name of the element suggests, it
-        bestows a
-        <em>stressed emphasis</em> on any text that it encapsulates. The nature of what is implied by that emphasis
-        relies on the
-        context of the rest of the sentence or document. When used with assistive technology like a screen
-        reader, it
-        indicates a <em>stressed emphasis</em> on its content, either by generating a special set of braille indicator
-        symbols around the text, or by adding the stressed vocal quality to some, but not most voice screen readers.
-    </p>
-    <p>And the difference between &lt;b&gt; and &lt;strong&gt; are very similar. <b>Bolded text</b> should be strictly
-        used if you'd like to add a bit of formatting that acts as a visual support to the function of the content.</p>
-    <p><strong>Strong text</strong>, on the other hand, should be used only to convey a sense of importance or urgency
-        to a selection of text.</p>
+
     <br>
-    <p>Those examples are fairly obvious, but what about the rest? &lt;p&gt; and &lt;div&gt; are pretty similar, but
-        &lt;p&gt; adds an extra bit of space above and below it. What if I don't like that extra space? Can I just wrap
-        all of my paragraphs in a &lt;div&gt; element?</p>
-    <p>Or what about all of the different heading elements?
-    <h1>&lt;h1&gt;</h1>
-    <h2>&lt;h2&gt;</h2>
-    <h3>&lt;h3&gt;</h3>
-    <h4>&lt;h4&gt;</h4>
-    <h5>&lt;h5&gt;</h5>
-    <h6>&lt;h6&gt;</h6>
-    Can't I just use &lt;h1&gt; and be done with it? How many different titles or headings could you have on a page?</p>
-    <p>Nope, sorry. It's hard to explain without jumping too far ahead in the curriculum, but trust me when I say that
-        as we get deeper into the content, you will begin to understand
-        the power and control that semantic HTML provides over the look and feel of your webpage. This is something
-        that I didn't fully appreciate the first time around but as I refactored my code over and over again, I began to
-        see that many of my headaches were solved simply by incorporating semantic HTML into my work.</p>
+
+    <p>
+        You might be thinking,
+        <br><i>"But this is a journal about HTML... are you telling me that a browser needs to ruminate on the deeper
+            meaning of the &lt;strong&gt; element before interpreting the code?"</i>
+    </p>
+
+    <p>
+        Well, no... of course not. And if one did, we'd have far more to worry about than understanding semantics.
+    </p>
+
+    <br>
+
+    <p>
+        But <em>we</em> need to understand how much more capable we are at this kind of thing than a computer is. So
+        much of our understanding is inferred by the vast number of contextual clues we process without even really
+        thinking about it. The browser can't think for itself (yet) and is therefor incapable of contextualizing
+        information like a human being. We have to feed it that context manually and explicitly.
+    </p>
+
+    <p>
+        In order to understand the idea of semantics used in HTML, we have to set up a scenario where we can try to
+        interpret information as though we were the browser - with zero context.</p>
+
+    <br>
+
+    <p>
+        <u><b>So, let's do a little exercise!</b></u>
+    </p>
+
+    <p>
+        I have list of twelve different words. Please think of a sentence that includes the word <i>run</i> from that
+        list. But don't include either the word <i>run</i> or the word <i>run</i> in that sentence.
+    </p>
+
+    <p>
+        Having trouble? Sorry, let me make that a little more clear.. here is the list! Now, please create a sentence
+        using the word <i>run</i>, but not the words <i>run</i> or <i>run</i>:
+    <ul>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+        <li>run</li>
+    </ul>
+    </p>
+
+    <p>
+        That didn't clear things up for you? Well, would it help if I gave you the definitions?
+    <ul>
+        <li>run - to move.</li>
+        <li>run - to operate.</li>
+        <li>run - to operate.</li>
+        <li>run - to move.</li>
+        <li>run - to extend to.</li>
+        <li>run - to be a candidate.</li>
+        <li>run - to smudge or spread.</li>
+        <li>run - to escape.</li>
+        <li>run - to operate.</li>
+        <li>run - a vertical line of unraveled stitches in fabric.</li>
+        <li>run - a sequential occurrence of circumstances.</li>
+        <li>run - free and unrestricted access to.</li>
+    </ul>
+    Hopefully that helps, now please use the word <i>run</i>, but not <i>run</i> or <i>run</i>.
+    </p>
+
+    <p>
+        Still not enough? Ok then, I'll provide some more context..
+        <br>Please use the word <i>run (as in, to operate)</i> in a sentence but do not include the words <i>run (as in,
+            to move)</i> or the word <i>run (as in, to move)</i>.
+    </p>
+
+    <p>
+        I can still see that you are having some trouble. I guess I have to make this explicitly clear to you and
+        provide all of the context myself.
+        <br>From the following list of words and their definitions...
+    <ul>
+        <li>run - to move quickly on foot.</li>
+        <li>run - to function or operate.</li>
+        <li>run - to manage or conduct.</li>
+        <li>run - to flow or leak.</li>
+        <li>run - to come to or extend to.</li>
+        <li>run - to be a candidate.</li>
+        <li>run - to smudge or spread.</li>
+        <li>run - to escape.</li>
+        <li>run - to be in charge of or oversee.</li>
+        <li>run - a vertical line of unraveled stitches in fabric.</li>
+        <li>run - a sequential occurrence of circumstances.</li>
+        <li>run - free and unrestricted access to.</li>
+    </ul>
+    Please use the word <i>run (as in to be in charge of or oversee)</i> in a sentence that does not include either the
+    word <i>run (as in to move quickly on foot)</i> or the word <i>run (as in to flow or leak)</i>.
+    </p>
+
+    <br>
+
+    <p>
+        Ah, you finally understand what I'm asking you to do! But that was a lot of work on my end.
+    </p>
+
+    <p>
+        In turns out that we have to invest much more time, energy, and forethought into writing HTML than we do into
+        normal conversation. This isn't because it's difficult or challenging to write HTML (or CSS), but because we
+        aren't used to having to manually produce and connect the kind of context and information that our brains and
+        environment normally provide for us.
+    </p>
+
+    <br>
+
+    <p>
+        So, when it comes down to it, what does this all mean for writing HTML?
+    </p>
+
+    <p>
+        It means that we have to use the resources provided to us deliberately and with a clear understanding of the
+        impact of our choices.
+    </p>
+
+    <p>
+        HTML provides the <b>skeleton</b> that the rest of our webpage is built upon and we have to make sure that the
+        foundations we are putting in place are well formed. That means we have to get to know the elements and their
+        intended purposes, become comfortable with the hierarchy of nested elements, and know where to &lt; &gt; open
+        and
+        &lt;/ &gt; close your elements. It also means that we will have to pay close attention to how our HTML, CSS, and
+        eventually JavaScript interface with each other as we move forward.
+    </p>
+
+    <br>
+
+    <p>
+        These first few pages will be very simple, with a barebones layout structure and basic syntax.
+    </p>
+
+    <p>
+        As we continue forward, we will incorporate more and more of the tools being introduced in The Odin Project's
+        curriculum, and the pages will start to come to life.
+    </p>
+
+    <br>
+
 </body>
 
 </html>
