@@ -8,8 +8,12 @@
 
 <body>
     <ul>
-        <li><a href="/StudyJournal/index.html">Home</a></li>
-        <li><a href="/StudyJournal/pages/100daysofstudy/100days.html">100 Days</a></li>
+        <li>
+            <a href="/StudyJournal/index.html">Home</a>
+        </li>
+        <li>
+            <a href="/StudyJournal/pages/100daysofstudy/100days.html">100 Days</a>
+        </li>
     </ul>
 
     <p>
@@ -17,14 +21,12 @@
     </p>
 
     <br>
-
     <p>
         What is the absolute bare minimum required to create a valid HTML webpage? It may surprise you, but all it takes
         is a small collection of 2 lines of HTML composed of 1 declaration, 1 HTML element, and at least 1 character.
     </p>
 
     <br>
-
     <p>
         It looks like this:
     </p>
@@ -32,10 +34,10 @@
     <p>
         &lt;!DOCTYPE html&gt;
         <br>&lt;title&gt;?&lt;/title&gt;
-        <br>
-        <br>
     </p>
 
+    <br>
+    <br>
     <p>
         Granted, all that will get you is an empty page, but it is a perfectly <em>valid</em> empty page.
     </p>
@@ -50,13 +52,11 @@
     </p>
 
     <br>
-
     <p>
         Let's take a look at each piece of this proto-webpage's HTML:
     </p>
 
     <br>
-
     <p>
         <b>&lt; &gt;</b>
         <br>The angle brackets &lt; &gt; are fundamental to HTML syntax. Anything inside of a pair of angle
@@ -69,37 +69,43 @@
         But when you want your dog to <em>do</em> something, you may change your body language, alter your voice
         slightly, and enunciate your words more clearly:
     </p>
+
     <p>
         <strong>Sit.</strong>
         <br>The dog sits.
     </p>
+
     <p>
         <em>Walk?</em>
         <br>The dog fetches its leash.
     </p>
+
     <p>
         <em>Shake!</em>
         <br>The dog lifts its paw for a handshake.
     </p>
+
     <p>
         If your dog is trained and well-behaved (which is unlikely), it will perform these commands on cue.
         <br>But if you don't adopt this change in communication style, your dog will likely not assume that it should
         act on these words.
     </p>
+
     <p>
         <i>"I'm sorry Bob, I know it's what you want but I'm not going to <b>roll over</b> on this."</i>
         <br>The dog does not begin rolling cross the living room.
     </p>
+
     <p>
         It is the same with the browser. When we speak in a &lt;tone&gt; that it understands, it realizes <i>"oh, you're
             talking to <strong>me</strong>!"</i> and executes your commands.
     </p>
+
     <p>
         We will see this play out below.
     </p>
 
     <br>
-
     <p>
         <b>&lt;!DOCTYPE html&gt;</b>
         <br>Now that we understand the function of the angle brackets, we can immediately see that this line is a set of
@@ -130,7 +136,6 @@
     </p>
 
     <br>
-
     <p>
         <b>&lt;title&gt; &lt;/title&gt;</b>
         <br>Here we have another set of instructions, called an <b>element</b>. But you will notice some distinct
@@ -146,6 +151,7 @@
         them and their uses and definitions are so woven into and amongst each other, I wouldn't even know how to begin
         without losing your attention entirely. So bear with me and we'll straighten this all out.
     </p>
+
     <p>
         A <b>tag</b> is an instruction that defines the starting and ending boundaries of an element.
         <br>Many tags come in pairs, each of which is itself enclosed by a pair of delimiting symbols.
@@ -157,12 +163,14 @@
         <br><b>[start tag open] [tag] [tag close]</b> content <b>[end tag open] [tag] [tag close]</b>
         <br><b>&lt; start tag &gt;</b> content <b>&lt;/ end tag &gt;</b>
     </p>
+
     <p>
         An <b>element</b> is just the term used to describe a tag pair and its content: <b>&lt;title&gt;</b>Study
         Journal:
         Day
         1<b>&lt;/title&gt;</b>
     </p>
+
     <p>
         As mentioned above, most tags come in a pair which enclose the content that the tag is modifying.
         <br>The simplest way to represent this is as follows:
@@ -174,6 +182,7 @@
         <br>
         <br>...content... <b><i>modified content</i></b> ...content...
     </p>
+
     <p>
         But some tags exist alone, without the need for an end tag, and make up an entire element by themself.
         <br>Dramatically named <b>void</b> elements, they do not modify any content and therefor do not need an end tag.
@@ -181,7 +190,6 @@
     </p>
 
     <br>
-
     <p>
         <b>?</b>
         <br>At lease one character in length, this <b>?</b> could have been anything, but the content of &lt;title&gt;
@@ -189,22 +197,27 @@
     </p>
 
     <br>
-
     <p>
         Not too bad, right? But.. why did I call it a <em>proto-</em>webpage at the start of this journal entry?
         <br>Well, that's because the browser is actually doing some work here filling in a lot of blanks.
         <br>Browsers kind of know what to expect from HTML and their method for understanding an HTML document implies
         the existence of a few more elements that the browser infers if not stated in the document.
     </p>
+
     <p>
         So when we write:
     </p>
+
     <p>
         <b>&lt;!DOCTYPE html&gt;</b> <i>-- tells the browser which HTML standards to use</i>
         <br><b>&lt;title&gt;?&lt;/title&gt;</b> <i>-- gives the page a name shown in the browser tab</i>
         <br>
     </p>
-    <p>The browser infers the following:</p>
+
+    <p>
+        The browser infers the following:
+    </p>
+
     <p>
         &lt;!DOCTYPE html&gt;
         <br><b>&lt;html&gt;</b> <i>-- the root element of the webpage; all other elements are children of
@@ -223,7 +236,6 @@
     </p>
 
     <br>
-
     <p>
         There is obviously still a lot to learn about this basic structure, the HTML <b>boilerplate</b>, but we now have
         a general understanding of basic HTML syntax and the fundamental building blocks of webpage creation.
