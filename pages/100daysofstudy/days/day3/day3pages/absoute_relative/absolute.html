@@ -17,8 +17,7 @@
     </ul>
 
     <p>
-        An absolute link is one that points to any location that uses the following struction for
-        its destination:
+        An absolute link is one that points to any location that uses the following struction for its destination:
     </p>
 
     <p>
@@ -38,7 +37,6 @@
         over again - would have been to drop the // altogether and just use the : after http in URLs!
     </p>
 
-
     <p>
         The <b>path</b>, or more specifically the <b>path to the resource</b>, is kind of a map that points us directly
         to the content we would like to see. On a static website, this is literally the file structure of the folders
@@ -53,28 +51,93 @@
         <br> You may also sometimes see an anchor to a specific section of the resource, identified in the URL by the
         &#35;.
     </p>
-
     <br>
-
     <p>
         Here are some examples of <b>absolute</b> links:
 
-        <br>
+        <br> <a href="https://www.theodinproject.com/about">https://www.theodinproject.com/about</a>
 
-        <a href="https://www.theodinproject.com/about">https://www.theodinproject.com/about</a>
+        <br> <a href="https://www.linkedin.com/in/chris-m-gerfen/">https://www.linkedin.com/in/chris-m-gerfen/</a>
 
-        <br>
-
-        <a href="https://www.linkedin.com/in/chris-m-gerfen/">https://www.linkedin.com/in/chris-m-gerfen/</a>
-
-        <br>
-
-        <a href="https://www.youtube.com/@ambienttechnomixes">https://www.youtube.com/@ambienttechnomixes</a>
+        <br> <a href="https://www.youtube.com/@ambienttechnomixes">https://www.youtube.com/@ambienttechnomixes</a>
+    </p>
+    <br>
+    <p>
+        But how do we actually "arrive" at these destinations?
+    </p>
+    <br>
+    <p>
+        If you think of a URL like a set of directions, an <b>absolute</b> link is akin to a street address:
     </p>
 
+    <p>
+        <i> 555 Ember Rd.
+            <br>Dragon Valley, KA
+            <br>United Kingdoms of New Albion
+        </i>
+    </p>
     <br>
+    <p>
+        But while street addresses are formatted from most local (555 Ember Rd.) to least local (United Kingdoms of New
+        Albion) our computer sees it in reverse, starting from the least local position and honing in on the most local
+        end point. And unless it's been there before (or knows someone who has), it'll have to ask for directions:
+    </p>
 
-    <p>Now, let's move on to <a href="./relative.html"><b>Relative</b></a> links!</p>
+    <p>
+    <ul>
+        <li>
+            COMPUTER: <i>Oh, great and powerful Oracle of New Albion, have you knowledge of the great realm of Kah
+                Le'Fornia?</i>
+            <br>THE ORACLE: <i>Yes, young computer, it is yonder. I shall direct thee to the king.</i>
+        </li>
+        <br>
+        <li>
+            After arriving in Kah Le'Fornia
+            <br>COMPUTER: <i>Oh, wise and wondrous King, can you point the way to the dukedom of Dragon Valley?</i>
+            <br>THE KING: <i>Yes, brave computer, it is yonder. This honorable knight shall guide thee to the duke.</i>
+        </li>
+        <br>
+        <li>
+            After arriving in Dragon Valley
+            <br>COMPUTER: <i>Oh fearsome and pious duke, can you point the way to Ember Road?</i>
+            <br>THE DUKE: <i>Yes, foolish computer, it is yonder. Follow the ashen trail. Praise the flame!</i>
+        </li>
+        <br>
+        <li>
+            After arriving in Dragon Valley
+            <br>COMPUTER: <i>My quest is complete, and my destination is at hand!</i>
+        </li>
+    </ul>
+    </p>
+    <br>
+    <p>
+        So what does this process look like here in the real world if we wanted to go to www.example.org/page1.html?
+    <ul>
+        <li>
+            Well, first a request is sent to the root server, asking, <i>"where can I find .org?"</i>.
+        </li>
+        <br>
+        <li>
+            Our computer is redirected by the root server to the .org top-level domain (TLD) server, where it then asks,
+            <i>"where can I find example.org?</i>
+        </li>
+        <br>
+        <li>
+            Our computer is redirected once again by the TLD server to the authoritative name server, where is asks,
+            <i>"what's the IP address of www.example.org?"</i>
+        </li>
+        <br>
+        <li>
+            The authoritative server responds with the appropriate IP address which leads the computer directly to
+            www.example.org, where it sends its final request directly to the server for the page1.html resource.
+        </li>
+    </ul>
+    </p>
+    <br>
+    <p>
+        Now, let's move on to <a href="./relative.html"><b>Relative</b></a> links!
+    </p>
+    <br>
 
 </body>
 
