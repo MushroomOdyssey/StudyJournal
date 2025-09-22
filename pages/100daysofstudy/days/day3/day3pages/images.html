@@ -8,27 +8,103 @@
 </head>
 
 <body>
-    <p>The &lt;img&gt; element works similarly to &lt;a&gt;, but instead of bringing you to the content, it brings the
-        content to you!</p>
-    <p>The structure is recognizable: &lt;img src=" "&gt;</p>
-    <p>But we don't use a closing tag with &lt;img&gt; - it's <b>self-closing</b>. There is no such thing as
-        &lt;/img&gt;</p>
-    <br>
-    <p>Let's take a closer look at this element:</p>
-    <p><b>&lt;img&gt;</b> defines a placeholder for an image to be embedded into the document.</p>
-    <p><b>src=" "</b> is an attribute of &lt;img&gt; that takes a value.</p>
-    <p>And just like in the anchor element, the <b>value</b> entered between the qoutation marks <b>" "</b> is the
-        destination URL of our desired image!</p>
-    <br>
-    <p>Now, FINALLY, let's combine absolutely everything that we talked about in Day 3:</p>
-    <br>
-    <p>Behold:</p>
-    <p>&lt;a href="../pages/kittens.html"&gt;&lt;img src="../images/OIG1.jpeg" alt="A kitten in a wizard's cloak and
-        hat casting a spell" height="500" width="500"&gt;&lt;/a&gt;</p>
-    <p><a href="../pages/kittens.html"><img src="../images/OIG1.jpeg"
-                alt="A kitten in a wizard's cloak and hat casting a spell" height="500" width="500"></a>
-        <br>Click on the image!
+
+    <ul>
+        <li>
+            <a href="/StudyJournal/index.html">Home</a>
+        </li>
+        <li>
+            <a href="/StudyJournal/pages/100daysofstudy/100days.html">100 Days</a>
+        </li>
+        <br>
+        <li>
+            <a href="../day3pages/absoute_relative/relative.html">Back to page 4</a>
+        </li>
+    </ul>
+
+    <p>
+        The &lt;img&gt; element works similarly to &lt;a&gt;, but instead of bringing you to the content, it brings the
+        content to you!
     </p>
+
+    <p>
+        The structure is recognizable - tag, attribute, value: &lt;img src=" "&gt;
+    </p>
+
+    <p>
+        But we don't use a closing tag with &lt;img&gt; - it's <b>self-closing</b>. There is no such thing as
+        &lt;/img&gt;
+    </p>
+
+    <br>
+    <p>
+        Let's take a closer look at this element:
+    </p>
+
+    <p>
+        <b>&lt;img&gt;</b> defines a placeholder for an image to be embedded into the document.
+    </p>
+
+    <p>
+        <b>src=" "</b> is an attribute of &lt;img&gt; that takes a value.
+    </p>
+
+    <p>
+        And just like in the anchor element, the <b>value</b> entered between the qoutation marks <b>" "</b> is the
+        destination URL of our desired image!
+    </p>
+
+    <br>
+    <p>
+        Now, FINALLY, let's combine absolutely everything that we talked about in Day 3, along with a little bonus
+        knowledge:
+    </p>
+
+    <br>
+    <p>
+        Behold:
+    </p>
+
+    <p>
+        &lt;a href="../pages/kittens.html"&gt;&lt;img src="../images/OIG1.jpeg" alt="A kitten in a wizard's cloak and
+        hat casting a spell" height="500" width="500"&gt;&lt;/a&gt;
+    </p>
+
+    <p>
+        Let's simplify that really quick.
+    <ul>
+        <li>
+            &lt;a href=""&gt;
+            <br><i>The anchor start tag</i>
+            <ul>
+                <li>
+                    &lt;img src=""&gt;
+                    <br><i>The image element with some bonus alt text and display constraints</i>
+                    <br><i>Note that this image element is nested within the anchor element</i>
+                </li>
+            </ul>
+        </li>
+        <li>
+            &lt;/a&gt;
+            <br><i>The anchor close tag</i>
+        </li>
+    </ul>
+    </p>
+
+    <p>
+        By nesting the &lt;img&gt; element <i><b>within</b></i> the &lt;a&gt; &lt;/a&gt; element, the &lt;img&gt; then
+        becomes a child of &lt;a&gt;, which means that, in our example, the &lt;img&gt; becomes the content of the
+        anchor.
+        <br>This turns the whole image into a link!
+    </p>
+
+    <p>
+        Click on it and test it out yourself!
+    </p>
+
+    <a href="./kittens.html"><img src="./day3images/OIG1.jpeg"
+            alt="A kitten in a wizard's cloak and hat casting a spell" height="500" width="500"></a>
+
 </body>
 
 </html>
